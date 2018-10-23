@@ -14,6 +14,14 @@ describe("Vue component tests", () => {
     expect(defaultData.title).toBe("BT3103 Week 10");
   });
 
+  it("The component should have an add function", () => {
+    expect(typeof App.methods.add).toBe("function");
+  });
+
+  it("The add function should add 2 numbers together", () => {
+    expect(App.methods.add(5, 8)).toBe(13);
+  });
+
   it("The component should have an updateCurrentChart function.", () => {
     expect(typeof App.methods.updateCurrentChart).toBe("function");
   });
