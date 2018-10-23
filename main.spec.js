@@ -7,7 +7,7 @@ describe("Vue component tests", () => {
   });
   it("The component should have a title property.", () => {
     const defaultData = App.data();
-    expect(defaultData.title);
+    expect(defaultData.title).not.toBe(undefined);
   });
   it("The component's title should be BT3103 Week 10", () => {
     const defaultData = App.data();
