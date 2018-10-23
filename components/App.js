@@ -23,7 +23,10 @@ export default {
     };
   },
   methods: {
-    updateCurrentChart: function(newChart) {}
+    updateCurrentChart: function(newChart) {},
+    add: function() {
+      return 13;
+    }
   },
   firebase: {
     charts: {
